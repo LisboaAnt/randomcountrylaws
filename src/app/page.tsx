@@ -10,8 +10,7 @@ export default function Home() {
 
   return (
     <main className=" ">
-      <div className="">
-        Listas
+      <div className="" style={{ backgroundImage: 'url("/imgs/bg.png")'}}>
         <LawsOverview laws={todasLeis} additionalInfo={""} />
       </div>
     </main>
