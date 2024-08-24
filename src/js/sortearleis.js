@@ -1,7 +1,5 @@
 import laws from "./Laws";
 
-
-
   function sortearLei(leis, blockedLaws) {
     const leisFiltradas = leis.filter(lei => !blockedLaws.has(lei.name));
     return leisFiltradas.length > 0 ? leisFiltradas[Math.floor(Math.random() * leisFiltradas.length)] : null;
