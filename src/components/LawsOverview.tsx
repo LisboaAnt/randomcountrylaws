@@ -63,7 +63,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
       <div className='basis-4/5 mx-12'>
         <h1 className={`text-2xl font-bold mb-4 w-full`}>Laws Overview</h1>
         <div className={`flex justify-between`}>
-          <div className={"w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]"} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '570px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
+          <div className={`w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]`} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '643px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
               <LawList laws={laws} ids={powerStructureIds} />
           </div>
 
@@ -71,7 +71,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
             <LawList laws={laws} ids={economyIds} />
           </div>
 
-          <div className={"w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]"} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '570px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
+          <div className={`w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]`} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '643px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
             <LawList laws={laws} ids={humanRightsIds} />
           </div>
         </div>
