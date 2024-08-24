@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'fontVictoria';
+  src: url('/fontVictoria.otf') format('opentype');
+  font-weight: normal; /* Ajuste conforme necessário */
+  font-style: normal; /* Ajuste conforme necessário */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,6 +31,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'fontVictoria', sans-serif;
 }
 
 @layer utilities {

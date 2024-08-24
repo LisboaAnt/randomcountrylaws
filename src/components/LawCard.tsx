@@ -8,7 +8,7 @@ interface LawCardProps {
 
 const LawCard: React.FC<LawCardProps> = ({ law }) => {
   return (
-    <div className={`flex p-[2px] m-0 rounded shadow-md relative group w-full`}>
+    <div className={`flex p-[2px] m-0 rounded shadow-md relative group w-full font-custom`}>
       {/* Imagem de Fundo usando o componente Image */}
       <Image src="/imgs/fundolei.png" alt="Fundo Lei" className="h-[70px]" width={350} height={64} />
       {/* Conteúdo do Card */}
@@ -17,8 +17,8 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
           Logo
         </div>
         <div className='flex flex-col ml-2'>
-          <span className='text-xs text-[#88827d] font-semibold'>{law.id}</span>
-          <h1 className={`pt-0 text-sm text-[#f3f6e3] font-bold`}>{law.name}</h1>
+          <span className='text-sm text-[#88827d] font-semibold'>{law.id}</span>
+          <h1 className={`pt-0 text-base text-[#f3f6e3] font-bold`}>{law.name}</h1>
         </div>
       </div>
       {/* Pop-up */}
