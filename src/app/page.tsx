@@ -6,7 +6,7 @@ import LawsOverview from "@/components/LawsOverview";
 export default function Home() {
 
 
-const todasLeis = sortearTodasLeis(laws);
+  const todasLeis: any = sortearTodasLeis(laws); 
 
   return (
     <main className=" ">

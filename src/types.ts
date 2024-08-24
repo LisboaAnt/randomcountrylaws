@@ -10,6 +10,6 @@ export interface Law {
   
   // Definindo a interface para as propriedades do componente
  export interface LawsOverviewProps {
-    laws: Record<string, Law>; // Aceita um objeto com chaves do tipo string e valores do tipo Law
+    laws: Record<string, Law>;
     additionalInfo: string;
   }
