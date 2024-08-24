@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className=" ">
-      <div className="" style={{ backgroundImage: 'url("/imgs/bg.png")'}}>
+      <div className="min-h-screen" style={{ backgroundImage: 'url("/imgs/bg.png")' }}>
         <LawsOverview laws={todasLeis} additionalInfo={""} />
       </div>
     </main>
