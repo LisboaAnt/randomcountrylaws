@@ -1,7 +1,13 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* Restante do seu CSS */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,6 +20,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+body {
+  font-family: 'EB Garamond', serif;
 }
 
 body {
@@ -30,4 +40,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* styles/globals.css */
+.text-border {
+  text-shadow: 
+    -0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
 }

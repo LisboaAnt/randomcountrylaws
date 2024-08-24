@@ -40,5 +40,4 @@ import laws from "./Laws";
   
   // Executar o sorteio
   const resultado = sortearTodasLeis(laws);
-  console.log(resultado);
   
