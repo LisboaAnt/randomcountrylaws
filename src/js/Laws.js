@@ -353,7 +353,7 @@ export const laws  = {
       "Taxation": [
         {
           id: "Taxation",
-          name: "Consumption-Based Taxation",
+          name: "Consumption Based Taxation",
           desc: "A tax system where there are no direct income or per-capita taxes and instead revenue is raised through taxing the consumption of goods.",
           promulgates: [],
           blocks: [],

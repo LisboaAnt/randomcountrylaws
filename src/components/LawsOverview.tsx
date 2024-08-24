@@ -53,7 +53,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
   };
 
   return (
-    <div className={`flex flex-row justify-around p-4`}>
+    <div className={`flex flex-row justify-around p-4`} >
       <div className='basis-1/5'>
         <div className={`mt-8`}>
           {renderFirstLawWithoutId()}
