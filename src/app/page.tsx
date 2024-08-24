@@ -9,8 +9,8 @@ export default function Home() {
 const todasLeis = sortearTodasLeis(laws);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="main">
+    <main className=" ">
+      <div className="">
         Listas
         <LawsOverview laws={todasLeis} additionalInfo={""} />
       </div>
