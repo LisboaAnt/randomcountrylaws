@@ -54,15 +54,17 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
 
   return (
     <div className={`flex flex-row justify-around p-4`} >
-      <div className='basis-1/5'>
-        <div className={``}>
-        <Image src={`/imgs/icons/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain p-0 m-0" width={350} height={350}/>
+      <div className='basis-2/10'>
+        <div className={`flex flex-col justify-center items-center`}>
+        <Image src={`/imgs/icons/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>
           {renderFirstLawWithoutId()}
         </div>
       </div>
 
-      <div className='basis-4/5 mx-12'>
-        <h1 className={`text-2xl font-bold mb-4 w-full font-garamond`}>Laws Overview</h1>
+      <div className='basis-8/10 mx-8'>
+        <div className=''>
+          <Image src="/imgs/fundoPolitica.png" alt="Fundo Lei" className="ml-[13px] h-[57px]" width={1030} height={57}/>
+        </div>
         <div className={`flex justify-between`}>
           <div className={`w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]`} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '643px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
               <LawList laws={laws} ids={powerStructureIds} />
