@@ -15,7 +15,7 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
       {/* Conteúdo do Card */}
       <div className="absolute top-0 left-0 p-2 w-full h-full flex items-start">
         <div className='flex justify-center align-middle pt-[3px]'>
-          <Image src={`/imgs/icons/Law_${law.name.replace(/ /g, '_')}.png`} alt="" className="h-[50px]" width={50} height={40}/>
+          <Image src={`/imgs/Law_${law.name.replace(/ /g, '_')}.png`} alt="Icon Law" className="h-[50px]" width={50} height={40}/>
           
         </div>
         <div className='flex flex-col ml-2'>
