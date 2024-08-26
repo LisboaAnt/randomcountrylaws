@@ -32,7 +32,7 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
         <div className='flex align-middle items-center'>
 
           <div className="w-[40px] h-[40px] rounded-full bg-[#303030] border-2 border-[#80663af4] flex items-center justify-center mt-[-10px] mr-1 ml-[-10px]">
-            <Image src={`/imgs/law_${law.name.replace(/ /g, '_')}.png`} alt="Icon Law" className="h-[30px] w-[30px]" width={30} height={30}/>
+            <Image src={`/imgs/Law_${law.name.replace(/ /g, '_').toLowerCase()}.png`} alt="Icon Law" className="h-[30px] w-[30px]" width={30} height={30}/>
           </div>
           <p className={`mb-2 ml-2 mt-[-5px] font-bold`}>{law.name}</p>
         </div>
