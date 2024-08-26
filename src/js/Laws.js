@@ -6,7 +6,7 @@ export const laws  = {
           id: "GovernancePrinciples",
           name: "Monarchy",
           desc: "A form of governance where an aristocratic dynasty represents the country's national identity and yields executive powers to the royal head of the dynasty.",
-          promulgates: [""],
+          promulgates: [],
           blocks: ["Anarchy"]
         },
         {
