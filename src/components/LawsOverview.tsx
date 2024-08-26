@@ -55,7 +55,8 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
   return (
     <div className={`flex flex-row justify-around p-4`} >
       <div className='basis-1/5'>
-        <div className={`mt-8`}>
+        <div className={``}>
+        <Image src={`/imgs/icons/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain p-0 m-0" width={350} height={350}/>
           {renderFirstLawWithoutId()}
         </div>
       </div>
