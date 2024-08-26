@@ -12,4 +12,6 @@ export interface Law {
  export interface LawsOverviewProps {
     laws: Record<string, Law>;
     additionalInfo: string;
+    handleSortearLeis: () => void; // Adiciona a nova prop
+    
   }

@@ -1,3 +1,5 @@
+
+
 import laws from "./Laws";
 
   function sortearLei(leis, blockedLaws) {
