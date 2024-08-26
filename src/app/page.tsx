@@ -9,7 +9,7 @@ export default function Home() {
   const todasLeis: any = sortearTodasLeis(laws); 
 
   return (
-    <main className=" ">
+    <main className="">
       <div className="min-h-screen" style={{ backgroundImage: 'url("/imgs/bg.png")' }}>
         <LawsOverview laws={todasLeis} additionalInfo={""} />
       </div>

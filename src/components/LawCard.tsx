@@ -15,7 +15,7 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
       {/* Conteúdo do Card */}
       <div className="absolute top-0 left-0 p-2 w-full h-full flex items-start">
         <div className='flex justify-center align-middle pt-[3px]'>
-          <Image src={`/imgs/icons/Law_${law.name.replace(/ /g, '_')}.png`} alt="" className="h-[50px]" width={50} height={40}/>
+          <Image src={`/imgs/Law_${law.name.replace(/ /g, '_')}.png`} alt="Icon Law" className="h-[50px]" width={50} height={40}/>
           
         </div>
         <div className='flex flex-col ml-2'>
@@ -24,24 +24,35 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
         </div>
       </div>
       {/* Pop-up */}
-      <div className='absolute z-10 hidden group-hover:block bg-black border border-gray-300 p-4 rounded shadow-lg -top-2 right-full mr-2 w-64'>
-        <p className={`mb-2`}>Desc: {law.desc}</p>
+      <div className='absolute z-10 hidden group-hover:block border border-[#7f6a45] p-4 rounded shadow-lg -top-2 right-full mr-2 w-64' style={{
+        background: 'linear-gradient(-45deg, #1e1819, #272021, #282022, #433437), url(/path/to/your/texture.png)',
+        backgroundSize: 'cover', // Ajusta a textura para cobrir todo o contêiner
+        backgroundBlendMode: 'overlay' // Mescla a textura com o gradiente
+      }}>
+        <div className='flex align-middle items-center'>
+
+          <div className="w-[40px] h-[40px] rounded-full bg-[#303030] border-2 border-[#80663af4] flex items-center justify-center mt-[-10px] mr-1 ml-[-10px]">
+            <Image src={`/imgs/Law_${law.name.replace(/ /g, '_')}.png`} alt="Icon Law" className="h-[30px] w-[30px]" width={30} height={30}/>
+          </div>
+          <p className={`mb-2 ml-2 mt-[-5px] font-bold`}>{law.name}</p>
+        </div>
+        <p className={`mb-2 text-[#a4a09c]`}>{law.desc}</p>
         {law.promulgates && law.promulgates.length > 0 && (
           <div>
-            <h3 className={`text-sm font-semibold`}>Promulgates:</h3>
+            <h3 className={`text-sm font-semibold text-[#ce8f61]`}>Promulgates:</h3>
             <ul>
               {law.promulgates.map((item, index) => (
-                <li key={index} className={`ml-4`}>{item}</li>
+                <li key={index} className={`ml-4 text-[#cdc8c3]`}>{item}</li>
               ))}
             </ul>
           </div>
         )}
         {law.blocks && law.blocks.length > 0 && (
           <div>
-            <h3 className={`text-sm font-semibold`}>Blocks:</h3>
+            <h3 className={`text-sm font-semibold text-[#ce6161]`}>Blocks:</h3>
             <ul>
               {law.blocks.map((item, index) => (
-                <li key={index} className={`ml-4`}>{item}</li>
+                <li key={index} className={`ml-4 text-[#cdc8c3]`}>{item}</li>
               ))}
             </ul>
           </div>
