@@ -1,10 +1,11 @@
+
 import React from 'react';
 import LawList from './LawList';
 import { LawsOverviewProps } from '@/types';
 import Image from 'next/image';
+import BtnReload from './BtnReload';
 
-
-const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => {
+const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handleSortearLeis}) => {
   const powerStructureIds = [
     'GovernancePrinciples', 'DistributionOfPower', 'Citizenship', 'ChurchAndState', 
     'Bureaucracy', 'ArmyModel', 'InternalSecurity'
@@ -56,7 +57,8 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
     <div className={`flex flex-row justify-around p-4`} >
       <div className='basis-2/10'>
         <div className={`flex flex-col justify-center items-center`}>
-        <Image src={`/imgs/icons/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>
+        <Image src={`/imgs/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>
+          <BtnReload onReload={handleSortearLeis} />
           {renderFirstLawWithoutId()}
         </div>
       </div>
@@ -86,3 +88,4 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo }) => 
 };
 
 export default LawsOverview;
+

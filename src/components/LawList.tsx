@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { LawsOverviewProps, Law } from '@/types';
 import LawCard from './LawCard';
