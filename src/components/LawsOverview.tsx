@@ -40,13 +40,19 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
         }
       }
 
+      console.log(listItems)
       return (
-        <div key={key} className={`border p-4 rounded shadow-md w-52`}>
-          <h2 className={`text-lg font-bold`}>{key}</h2>
-          <ul>
-            {listItems} {/* Renderiza os itens da lista */}
-          </ul>
-        </div>
+    <div key={key} className="border border-[#80663af4] my-10 p-4 rounded shadow-md bg-[#000000] bg-opacity-20 max-w-64">
+      <h2 className="text-[#ce6161] text-lg font-bold text-center">{key}</h2>
+      <ul className="grid grid-cols-2">
+        {listItems.map((item, index) => (
+          <li key={index} className="text-sm text-[#cdc8c3]">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+
       );
     }
 
@@ -59,7 +65,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
         <div className={`flex flex-col justify-center items-center`}>
         {/* <Image src={`/imgs/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>*/}
           
-            <div className='flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
+            <div className='mt-28 flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
               <div className='flex items-center justify-center'>
                 <BtnReload onReload={handleSortearLeis} />
               </div>

@@ -23,6 +23,7 @@
 
 body {
   font-family: 'EB Garamond', serif;
+  
 }
 
 body {
@@ -61,4 +62,24 @@ body {
   overflow-y: auto; /* Permite a rolagem dentro da barra lateral */
   padding: 10px;
   z-index: 1000; /* Garante que a barra lateral fique acima do conteúdo principal */
+}
+
+
+
+/* Estilo geral da barra de rolagem */
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+
+}
+
+/* Estilo do polegar da barra de rolagem (a parte que se move) */
+::-webkit-scrollbar-thumb {
+  background-color: #6f4a4a; /* Cor preta */
+  border-radius: 10px; /* Arredondar as bordas */
+}
+
+/* Estilo do trilho da barra de rolagem (o fundo) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparente */
+  background-color: #262B2D;
 }

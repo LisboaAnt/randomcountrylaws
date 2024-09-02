@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <div className="min-h-screen font-garamond" style={{ backgroundImage: 'url("/imgs/bg.png")' }}>
+      <div className="min-h-screen font-garamond" style={{ backgroundImage: 'url("/imgs/bg.png")'}}>
         {loading ? (
           <div className="flex justify-center min-h-screen">
               <Image className="pb-80" src={"/imgs/RandomLawsLogo.png"} alt="Carregando..." width={"1000"} height={"1000"}/>

@@ -9,9 +9,9 @@ function BtnReload({ onReload }: BtnReloadProps) {
     return (
         <div className="my-6">
             <button 
-            onClick={onReload} 
-            className="h-[56.25px] w-[249px] btn bg-cover bg-center transform transition-all hover:scale-105 "
-            style={{backgroundImage: 'url("/imgs/btn.png")',marginInline: '10px'}}
+                onClick={onReload} 
+                className="h-[56.25px] w-[249px] btn bg-cover bg-center transform transition-all duration-150 hover:scale-[1.01] active:scale-[1]"
+                style={{backgroundImage: 'url("/imgs/btn.png")', marginInline: '10px'}}
             >
                 <p className="text-[#eff2e0] text-lg font-bold text-border">Reload</p>
             </button>
