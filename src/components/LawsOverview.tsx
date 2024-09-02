@@ -62,7 +62,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
   return (
     <div className={`flex flex-row justify-around p-4`} >
       <div className='basis-2/10'>
-        <div className={`pt-24 flex flex-col justify-center items-center`}>
+        <div className={`pt-2 flex flex-col justify-center items-center`}>
         {/*<Image src={`/imgs/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>*/}
           
             <div className='flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
