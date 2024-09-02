@@ -7,7 +7,7 @@ interface BtnReloadProps {
 function BtnReload({ onReload }: BtnReloadProps) {
 
     return (
-        <div className="my-6 mr-1 scale-75">
+        <div className="my-6 scale-75">
             <button 
                 onClick={onReload} 
                 className="btn bg-cover bg-center transform transition-all duration-150 hover:scale-[1.01] active:scale-[1]"
