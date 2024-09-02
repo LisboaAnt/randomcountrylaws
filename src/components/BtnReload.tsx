@@ -7,13 +7,13 @@ interface BtnReloadProps {
 function BtnReload({ onReload }: BtnReloadProps) {
 
     return (
-        <div className="my-6">
+        <div className="my-6 scale-75">
             <button 
                 onClick={onReload} 
-                className="h-[56.25px] w-[249px] btn bg-cover bg-center transform transition-all duration-150 hover:scale-[1.01] active:scale-[1]"
-                style={{backgroundImage: 'url("/imgs/btn.png")', marginInline: '10px'}}
+                className="btn bg-cover bg-center transform transition-all duration-150 hover:scale-[1.01] active:scale-[1]"
+                style={{backgroundImage: 'url("/imgs/button_menu1.png")', backgroundSize: 'cover', width: '315px',height: '56px' }}
             >
-                <p className="text-[#eff2e0] text-lg font-bold text-border">Reload</p>
+                <p className="text-[#eff2e0e4] text-3xl font-bold text-border">Reload</p>
             </button>
         </div>
     );
