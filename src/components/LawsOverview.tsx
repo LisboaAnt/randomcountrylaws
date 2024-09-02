@@ -65,7 +65,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
         <div className={`flex flex-col justify-center items-center`}>
         {/* <Image src={`/imgs/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>*/}
           
-            <div className='mt-28 flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
+            <div className='mt-24 flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
               <div className='flex items-center justify-center'>
                 <BtnReload onReload={handleSortearLeis} />
               </div>
