@@ -64,6 +64,13 @@ body {
   z-index: 1000; /* Garante que a barra lateral fique acima do conteúdo principal */
 }
 
+.xs-scale-70{
+  scale: 100%;
+}
+
+.xs-scale-50{
+  scale: 100%;
+}
 
 
 /* Estilo geral da barra de rolagem */
@@ -82,4 +89,19 @@ body {
 ::-webkit-scrollbar-track {
   background-color: transparent; /* Transparente */
   background-color: #262B2D;
+}
+
+@media (max-width: 700px) {
+  .xs-scale-70 {
+    transform: scale(0.6);
+  }
+  .xs-scale-50{
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 700px) {
+  text{
+    transform: scale(0.7);
+  }
 }

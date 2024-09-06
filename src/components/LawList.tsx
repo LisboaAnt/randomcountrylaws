@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { LawsOverviewProps, Law } from '@/types';
+import { LawsOverviewProps } from '@/types';
 import LawCard from './LawCard';
 
 interface LawListProps {

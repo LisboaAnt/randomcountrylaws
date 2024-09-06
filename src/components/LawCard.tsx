@@ -15,13 +15,13 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
       {/* Imagem de Fundo usando o componente Image */}
       <Image src="/imgs/fundolei.png" alt="Fundo Lei" className="h-[70px]" width={350} height={64} />
       {/* Conteúdo do Card */}
-      <div className="absolute top-0 left-0 p-2 w-full h-full flex items-start">
-        <div className='flex justify-center align-middle pt-[3px]'>
-          <Image src={"/imgs/laws/Law_"+law.name.replace(/ /g, '_').toLowerCase()+".png"} alt={"Icon Law"+law.name.replace(/ /g, '_').toLowerCase()} className="h-[50px]" width={50} height={40}/>    
+      <div className="absolute top-0 left-0 pt-1  md:p-2 xl:p-2 w-full h-full flex items-start">
+        <div className='flex justify-center align-middle pt-[3px] xs-scale-50 ml-[-6px] md:ml-0 xl:ml-0 mr-[-15px] md:mr-0 lg:mr-0'>
+          <Image src={"/imgs/laws/Law_"+law.name.replace(/ /g, '_').toLowerCase()+".png"} alt={"Icon Law"+law.name.replace(/ /g, '_').toLowerCase()} className="h-[50px] min-w-10" width={50} height={40}/>    
         </div>
-        <div className='flex flex-col ml-2'>
-          <span className='text-xs text-[#857870] text-border'>{law.id}</span>
-          <h1 className={`mt-[-2px] text-base text-[#eff2e0] font-bold text-border`}>{law.name}</h1>
+        <div className='flex flex-col max-w-5 md:max-w-full ml-0 md:ml-2 xl:ml-2'>
+          <span className='ml-2 md:ml-0 xl:ml-0 mt-2 md:mt-0 xl:mt-0 text-[7px] md:text-xs lg:text-xs text-[#857870] text-border'>{law.id}</span>
+          <h1 className={`mt-[-8px] xs-scale-50 md:mt-[-2px] xl:mt-[-2px] text-base text-[#eff2e0] font-bold text-border`}>{law.name}</h1>
         </div>
       </div>
       {/* Pop-up */}
@@ -50,7 +50,7 @@ const LawCard: React.FC<LawCardProps> = ({ law }) => {
         )}
         {law.blocks && law.blocks.length > 0 && (
           <div>
-            <h3 className={`text-sm font-semibold text-[#ce6161]`}>Blocks:</h3>
+            <h3 className={` text-sm font-semibold text-[#ce6161]`}>Blocks:</h3>
             <ul>
               {law.blocks.map((item, index) => (
                 <li key={index} className={`ml-4 text-[#cdc8c3]`}>{item}</li>
