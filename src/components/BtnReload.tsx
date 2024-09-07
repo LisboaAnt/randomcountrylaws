@@ -13,7 +13,7 @@ function BtnReload({ onReload }: BtnReloadProps) {
                 className="btn bg-cover bg-center transform transition-all duration-150 hover:scale-[1.01] active:scale-[1]"
                 style={{backgroundImage: 'url("/imgs/button_menu1.png")', backgroundSize: 'cover', width: '315px',height: '56px' }}
             >
-                <p className="text-[#eff2e0e4] text-3xl font-bold text-border">Reload</p>
+                <p className="text-[#eff2e0e4] mb-1 text-3xl font-bold text-border">Reload</p>
             </button>
         </div>
     );

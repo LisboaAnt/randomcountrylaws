@@ -2,8 +2,8 @@
 import React from 'react';
 import LawList from './LawList';
 import { LawsOverviewProps } from '@/types';
-import Image from 'next/image';
 import BtnReload from './BtnReload';
+import BtnSave from './BtnSave';
 
 const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handleSortearLeis}) => {
   const powerStructureIds = [
@@ -60,14 +60,15 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
   };
 
   return (
-    <div className={`flex flex-row justify-around p-4`} >
-      <div className='basis-2/10'>
+    <div className={`flex flex-col-reverse lg:flex-row justify-around p-0 md:p-4 lg:p-4`} >
+      <div className="basis-2/10 ">
         <div className={`pt-2 flex flex-col justify-center items-center`}>
         {/*<Image src={`/imgs/RandomLawsLogo.png`} alt="Icon Law" className=" h-full w-full object-contain mt-[-30px] " width={350} height={350}/>*/}
           
-            <div className='flex items-center justify-center pr-1' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
-              <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center pr-1 pt-20' style={{ backgroundImage: 'url("/imgs/menu_randomlaws.png")',backgroundSize: 'cover', height: '364.46px', width: '331.46px'}}>
+              <div className='flex flex-col items-center justify-center space-y-0'>
                 <BtnReload onReload={handleSortearLeis} />
+                <BtnSave onSave={"content-to-capture"}/>
               </div>
             </div>
           
@@ -75,7 +76,7 @@ const LawsOverview: React.FC<LawsOverviewProps> = ({ laws, additionalInfo, handl
         </div>
       </div>
 
-      <div className='basis-8/10 mx-8'>
+      <div id="content-to-capture" className='basis-8/10 mx-0 md:mx-8 lg:md:mx-8 ' style={{ backgroundImage: 'url("/imgs/bg.png")'}}>
       <div className='bg-cover bg-center h-[50px] mr-[14px] ml-[13px] rounded-t-full' style={{ backgroundImage: "url('/imgs/fundoPolitica.png')" }}/>
         <div className={`flex justify-between`}>
           <div className={`w-2/6 pr-2 border border-r-2 border-[#7f6a45] bg-[#39121d]`} style={{ backgroundImage: 'url("/imgs/colunaleis.png")', backgroundSize: 'cover', backgroundPosition: 'center',marginInline: '10px', height: '643px', padding: '10px',paddingTop: '35px', borderRadius: '10px' }}>
